@@ -9,9 +9,7 @@ shinyUI(fluidPage(
     titlePanel("US Population Predictor"),
     fluidRow(includeMarkdown("Intro.Rmd")),
     tabsetPanel(
-      tabPanel ("Historical Population",
-                tableOutput('table')
-      ),
+      
         tabPanel("Predicted Population",
                  sidebarLayout(
                      sidebarPanel(width = 5,
@@ -35,6 +33,9 @@ shinyUI(fluidPage(
                        plotOutput('popTrends')
                      )
                  )),
+        tabPanel ("Historical Population",
+                  tableOutput('table')
+        ),
         
         tabPanel("Read Me",
                  # documentation goes here

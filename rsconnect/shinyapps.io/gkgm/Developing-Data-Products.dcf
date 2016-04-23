@@ -2,8 +2,8 @@ name: Developing-Data-Products
 account: gkgm
 server: shinyapps.io
 appId: 97130
-bundleId: 430456
+bundleId: 430500
 url: https://gkgm.shinyapps.io/Developing-Data-Products/
-when: 1461398793.65497
+when: 1461405680.3848
 asMultiple: FALSE
 asStatic: FALSE
