@@ -1,40 +1,46 @@
-shinyUI(fluidPage(
-   #use different font for the title (headerPanel)
-   tags$head(
-                tags$style(HTML("@import url('//fonts.googleapis.com/css?family=Lobster|Cabin:400,700');
-                h1 {
-                        font-family: 'Lobster', cursive;
-                        font-weight: 500;
-                        line-height: 1.1;
-                        color: #48ca3b;
-                   }
-               "))
-            ),
-   
-   headerPanel("US Population Predictor"),
-    
-    mainPanel(
+# Author: Gyan GM
+# Date: 2016-04-24
+#
+# User Interface File for US Population Predictor.
+
+library(shiny)
+
+shinyUI(fluidPage(    
+    titlePanel("US Population Predictor"),
+    fluidRow(includeMarkdown("Intro.Rmd")),
+    tabsetPanel(
+      tabPanel ("Historical Population",
+                tableOutput('table')
+      ),
+        tabPanel("Predicted Population",
+                 sidebarLayout(
+                     sidebarPanel(width = 5,
+                                  sliderInput('yr', 
+                                              label="Select a YEAR in the slider menu below: ",
+                                              value = 2020, 
+                                              min = 2014, 
+                                              max = 2040, 
+                                              step = 1,
+                                              format='####',
+                                              width='350px'
+                                  
+                     )),
+                     
+                   
+                     mainPanel(# put time series plots here
+                       p("in order to see the predicted population for that year below,
+                          using data points from the last 34 years (1980 - 2013) and 
+                          a simple linear regression method:"),
+                       
+                       plotOutput('popTrends')
+                     )
+                 )),
         
-            
-        sliderInput('yr', 
-                    label="Select a year: ",
-                    value = 2020, 
-                    min = 2014, 
-                    max = 2040, 
-                    step = 1,
-                    format='####',
-                    width='250px'
-                    ),
-        
-        p("and see the population predicted for that year below,
-           using data points from the last 34 years (1980 - 2013) and 
-           a simple linear regression method:"),
-        
-        plotOutput('popTrends')
-        
-    ),
-   
-   sidebarPanel ("Historical US population in millions from 1980 - 2013 (data from usgovernmentspending.com):",
-                 tableOutput('table')
-           )
+        tabPanel("Read Me",
+                 # documentation goes here
+                 includeMarkdown("ReadMe.Rmd")
+                 
+        ) 
+    )
 ))
+

@@ -1,0 +1,8 @@
+---
+title: "Intro"
+author: "Gyan GM"
+date: "1April 23, 2016"
+output: html_document
+---
+
+US Population Predictor is a small futuristic application for forcasting the future population of the USA between 2014 and 2040 AD using a 34 year data set between the years 1980 and 2013 collected from http://www.usgovernmentspending.com/download_multi_year_1980_2013USb_14c2li101mcn_20s.
