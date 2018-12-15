@@ -2,7 +2,7 @@
 US Population Predictor
 ========================
 
-## Introduction
+## Introduction:
 <small>
 The application uses R code to calculate the future US population between the years 2014 and 2040 using historical population data from the past 34 years (i.e. 1980 to 2013) and linear regression based on those past data points. 
 
@@ -15,7 +15,6 @@ It basically does the following:
 </small>
 
 ## Code snippet to extract & clean data:
-========================================
 The `getPop()` function in `server.R` extracts and cleans the historical data: 
 <small>
 
@@ -41,12 +40,10 @@ Pop <<- getPop()
 </small>
 
 ## Code snippet to draw the plot:
-=================================
 
 ![plot of chunk unnamed-chunk-1](Presentation-figure/unnamed-chunk-1-1.png)
 
 ## Conclusion:
-==============
 <small>
 This tiny shiny app predicts the population of United States of America based on the given historical dataset.
 </small>
