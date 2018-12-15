@@ -48,5 +48,5 @@ Pop <<- getPop()
 ## Conclusion:
 ==============
 <small>
-This tiny shiny app is just a part of peer assignment on a Data Science Coursera Course - Developing Data Products. The objective of this little application is to predict the population of United States of America based on the given data set.
+This tiny shiny app predicts the population of United States of America based on the given historical dataset.
 </small>
