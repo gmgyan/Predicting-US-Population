@@ -1,15 +1,3 @@
----
-title: "README"
-author: "Gyan GM"
-date: "April 23, 2016"
-output: html_document
-runtime: shiny
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Application Description
 
 Github: <https://github.com/gkgm/Developing-Data-Products>
