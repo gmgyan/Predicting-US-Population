@@ -14,8 +14,8 @@ It basically does the following:
 - Displays user documentation for this application under 'Read Me' tab.
 </small>
 
-Shiny app screenshot:
-![alt text](Presentation-figure/USpopPred.png)
+## Shiny app screenshot:
+![alt text](Presentation-figure/USpopPred.png =300x)
 
 ## Code snippet to extract & clean data:
 The `getPop()` function in `server.R` extracts and cleans the historical data: 
