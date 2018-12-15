@@ -15,7 +15,7 @@ It basically does the following:
 </small>
 
 ## Shiny app screenshot:
-![alt text](Presentation-figure/USpopPred.png =300x)
+![alt text](Presentation-figure/USpopPred.png)
 
 ## Code snippet to extract & clean data:
 The `getPop()` function in `server.R` extracts and cleans the historical data: 
