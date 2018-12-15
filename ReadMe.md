@@ -41,7 +41,7 @@ Pop <<- getPop()
 
 ## Code snippet to draw the plot:
 
-![plot of chunk unnamed-chunk-1](Presentation-figure/unnamed-chunk-1-1.png = 250x)
+![plot of chunk unnamed-chunk-1](Presentation-figure/unnamed-chunk-1-1.png = 150x)
 
 ## Conclusion:
 <small>
